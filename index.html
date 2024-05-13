@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>To-do List Project</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="add_todo small-screen">
+            <input type="text" class="todo" placeholder="Add a new task">
+            <button id="add_task" class="add-todo" disabled onclick="addTask()">
+                <svg xmlns="https://www.veryicon.com/icons/miscellaneous/frozenui/add-105.html" width="22" height="22" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <rect width="280" height="280" fill="none"></rect>
+                    <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                    <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+            </button>
+
+
+        </section>
+        <section class="display_todo hidden" id="display_todo">
+            <h1 class="tasks">Tasks - <span id="task-count"></span> </h1>
+            <ul class="todos" id="todos">
+
+            </ul>
+
+        </section>
+        <section class="display-done hidden" id="display-done">
+            <h1 class="tasks-done">Done - <span id="task-count-done"></span>
+            </h1>
+            <ul class="done" id="done">
+            </ul>
+        </section>
+
+
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+
+
+</html>
